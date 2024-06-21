@@ -209,6 +209,9 @@ img {
 }
 
 input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
   padding: 7px 15px;
   border: 1px solid #808080;
   border-radius: 4px;
@@ -217,12 +220,37 @@ input {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+  letter-spacing: inherit;
   transition: border-color 0.3s ease;
   outline: none;
 }
 
+label input {
+  margin-top: 5px;
+}
+
 input:focus {
   border-color: #000;
+}
+
+button {
+  width: max-content;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  color: #fff;
+  letter-spacing: inherit;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
 
 /* Task 1 */
@@ -271,11 +299,18 @@ input:focus {
 
 /* Task 3 */
 
-#name-input {
-  width: 100%;
-  max-width: 360px;
-}
-
 #name-input + h1 {
   margin: 16px 0 0;
+}
+
+/* Task 4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form button {
+  margin-top: 8px;
 }
