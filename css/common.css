@@ -314,3 +314,42 @@ button:hover {
 .login-form button {
   margin-top: 8px;
 }
+
+/* Task 6 */
+
+#controls {
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+#controls input {
+  width: 150px;
+}
+
+#controls button {
+  min-width: 120px;
+}
+
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+[data-destroy]:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  margin-top: 16px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+#boxes.active {
+  background-color: #f6f6fe;
+}
