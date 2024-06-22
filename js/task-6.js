@@ -11,6 +11,7 @@ const boxes = document.querySelector('#boxes');
 
 const createBoxes = amount => {
   boxes.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   const boxSize = 30;
 
   for (let i = 0; i < amount; i++) {
@@ -18,8 +19,10 @@ const createBoxes = amount => {
     box.style.width = `${boxSize + i * 10}px`;
     box.style.height = `${boxSize + i * 10}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxes.appendChild(box);
+    fragment.appendChild(box);
   }
+
+  boxes.appendChild(fragment);
 };
 
 const destroyBoxes = () => {
